@@ -14,7 +14,7 @@ module.exports = {
       resolve: "gatsby-source-sanity",
       options: Object.assign({}, clientConfig.sanity, {
         token: process.env.GATSBY_SANITY_READ_TOKEN,
-        watchMode: !isProd,
+        watchMode: true,
         overlayDrafts: !isProd
       })
     }
